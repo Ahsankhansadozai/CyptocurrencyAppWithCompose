@@ -1,4 +1,4 @@
-package com.example.bitcoinappmvvm.ui.theme
+package com.example.bitcoinappmvvm.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

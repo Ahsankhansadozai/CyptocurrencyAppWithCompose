@@ -1,4 +1,4 @@
-package com.example.bitcoinappmvvm.ui.theme
+package com.example.bitcoinappmvvm.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
