@@ -12,7 +12,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
@@ -27,13 +26,9 @@ object AppModule {
             .create(CoinPaprikaApi::class.java)
     }
 
-
     @Provides
     @Singleton
     fun provideCoinRepository(api: CoinPaprikaApi): CoinRepository {
         return CoinRepositoryImpl(api)
     }
-
-
-
 }

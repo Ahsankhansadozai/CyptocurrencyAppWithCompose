@@ -6,14 +6,14 @@ import com.example.bitcoinappmvvm.domain.repositoy.CoinRepository
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
-    private val coinPaprikaApi: CoinPaprikaApi
+    private val api: CoinPaprikaApi
 ) : CoinRepository {
+
     override suspend fun getCoins(): List<CoinDto> {
-        return getCoins()
+        return api.getCoins()
     }
 
     override suspend fun getCoinById(coinId: String): CoinDetailDto {
-        return getCoinById(coinId)
+        return api.getCoinById(coinId)
     }
-
 }
